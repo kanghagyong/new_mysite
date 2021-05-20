@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 import requests
 import json            #json import하기
 from urllib.request import urlopen
@@ -54,7 +54,7 @@ def item_price_get(request):
         "item_count" : item_count,
         "item_case" : item_case
     }
-    return HttpResponse("{}".format(data))
+    return JsonResponse(data)
 
 # ---------------------------------------------------------------------------- #
 
