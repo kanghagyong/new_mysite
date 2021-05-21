@@ -24,7 +24,7 @@ def item_price_get(request):
     time.sleep(1)
     driver.get('https://www.redprinting.co.kr/ko/product/item/ST/'+redid)
 
-    price_text = driver.find_element_by_name('TOTAL_PRICE').text
+    price_text = driver.find_element_by_id('TOTAL_PRICE').text
     paper_text = driver.find_element_by_id('paperSelectBoxItText').text
     paper_sub_text = driver.find_element_by_id('paper_sub_selectSelectBoxItText').text
     paper_dosu = driver.find_element_by_id('soduSelectBoxItText').text
