@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-eg8wec!yo=*zo7)f97u0lal*7e*96%-&(cu+4x)fzf(*l01(5m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.goorm.io']
+ALLOWED_HOSTS = ['redprinting.co.kr']
 
 
 # Application definition
